@@ -47,7 +47,7 @@ const callChrome = async () => {
         }
 
         if (request.options && request.options.emulateMedia) {
-            await page.emulateMedia(request.options.emulateMedia);
+            await page.emulateMediaType(request.options.emulateMedia);
         }
 
         if (request.options && request.options.viewport) {
